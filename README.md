@@ -1,10 +1,15 @@
 ## Pasos para ejecutar el API
 
 **1.- Crear una base de datos**
+
 **2.- Configurar el acceso a la base de datos desde .env**
+
 **3.- Desde la terminal ejecutar los siguientes comandos:**
+
      - php artisan migrate:refresh 
+     
      - php artisan db:seed --class=datosPrueba 
+     
 
 
 
