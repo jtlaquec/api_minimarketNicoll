@@ -6,9 +6,10 @@
 
 **3.- Desde la terminal ejecutar los siguientes comandos:**
 
-     - php artisan migrate:refresh 
+     php artisan migrate:refresh 
      
-     - php artisan db:seed --class=datosPrueba 
+     
+     php artisan db:seed --class=datosPrueba 
      
 
 
