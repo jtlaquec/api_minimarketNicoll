@@ -1,18 +1,18 @@
 ## Pasos para ejecutar el API
 
-1.- Crear una base de datos
-2.- Configurar el acceso a la base de datos desde .env
+<p 1.- Crear una base de datos>
+<p 2.- Configurar el acceso a la base de datos desde .env>
 
-DB_CONNECTION=mysql
-DB_HOST=
-DB_PORT=
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
+<p DB_CONNECTION=mysql>
+<p DB_HOST= >
+<p DB_PORT= >
+<p DB_DATABASE= >
+<p DB_USERNAME= >
+<p DB_PASSWORD= >
 
-3.- Desde la terminal ejecutar los siguientes comandos:
-    - php artisan migrate:refresh
-    - php artisan db:seed --class=datosPrueba
+<p 3.- Desde la terminal ejecutar los siguientes comandos: >
+   <p  - php artisan migrate:refresh >
+   <p  - php artisan db:seed --class=datosPrueba >
 
 
 
