@@ -4,16 +4,14 @@
 
 **2.- Configurar el acceso a la base de datos desde .env**
 
-**3.- Desde la terminal ejecutar los siguientes comandos:**
+**3.- Desde la terminal ejecutar el siguiente comando para crear las tablas y triggers en la base de datos:**
 
-     php artisan migrate:refresh 
+    php artisan migrate:refresh      
+    
+**4.- Desde la terminal ejecutar el siguiente comando para insertar datos de prueba:**
+   
+    php artisan db:seed --class=datosPrueba 
      
-     
-     php artisan db:seed --class=datosPrueba 
-     
-
-
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
