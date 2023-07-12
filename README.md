@@ -1,3 +1,21 @@
+## Pasos para ejecutar el API
+
+1.- Crear una base de datos
+2.- Configurar el acceso a la base de datos desde .env
+
+DB_CONNECTION=mysql
+DB_HOST=
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+
+3.- Desde la terminal ejecutar los siguientes comandos:
+    - php artisan migrate:refresh
+    - php artisan db:seed --class=datosPrueba
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
