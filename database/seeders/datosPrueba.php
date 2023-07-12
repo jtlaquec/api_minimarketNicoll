@@ -26,7 +26,47 @@ class datosPrueba extends Seeder
 
         DB::table('categorias')->insert([
             [
-                'nombre' => 'Categoría 1',
+                'nombre' => 'Alimentos y Despensas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Bebidas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Cervezas, Vinos y Licores',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Dulces y Botanas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Mascotas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Hogar y Limpieza',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Higiene y Cuidado Personal',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Farmacia',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'nombre' => 'Bebes',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
@@ -34,7 +74,15 @@ class datosPrueba extends Seeder
 
         DB::table('marcas')->insert([
             [
-                'nombre' => 'Marca 1',
+                'nombre' => 'Gloria',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+        ]);
+
+        DB::table('marcas')->insert([
+            [
+                'nombre' => 'Nestle',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
@@ -44,6 +92,42 @@ class datosPrueba extends Seeder
             [
                 'codigo' => 'UND',
                 'nombre' => 'Unidades',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'GRM',
+                'nombre' => 'Gramos',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'KGM',
+                'nombre' => 'Kilogramos',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'LTR',
+                'nombre' => 'Litros',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'CA',
+                'nombre' => 'Latas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'BX',
+                'nombre' => 'Cajas',
+                'created_at' => $now,
+                'updated_at' => $now,
+            ],
+            [
+                'codigo' => 'MIL',
+                'nombre' => 'Millares',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
