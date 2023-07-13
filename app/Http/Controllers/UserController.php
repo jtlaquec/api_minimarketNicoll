@@ -46,6 +46,7 @@ class UserController extends Controller
                 'celular' => ['nullable','regex:/^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s-]+$/'],
                 'password' => ['required', 'string'],
                 'role_id' => ['required', 'integer', 'min:1'],
+                'estado' => ['nullable', 'integer', 'min:0'],
             ]);
         
             $validator->validate();
@@ -60,6 +61,7 @@ class UserController extends Controller
         $user->celular = $request->input('celular', null);
         $user->password = Hash::make($request->password);
         $user->role_id = $request->input('role_id');
+        $user->estado = $request->input('estado', 1);
         $user->save();
         return $user;
     }
@@ -86,6 +88,7 @@ class UserController extends Controller
                 'celular' => ['nullable','regex:/^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s-]+$/'],
                 'password' => ['nullable', 'string'],
                 'role_id' => ['nullable', 'integer', 'min:1'],
+                'estado' => ['nullable', 'integer', 'min:0'],
             ]);
         
             $validator->validate();
@@ -98,6 +101,7 @@ class UserController extends Controller
         $user->celular = $request->filled('celular') ? $request->input('celular') : $user->celular;
         $user->password = $request->filled('password') ? Hash::make($request->password) : $user->password;
         $user->role_id = $request->filled('role_id') ? $request->input('role_id') : $user->role_id;
+        $user->estado = $request->filled('estado') ? $request->input('estado') : $user->estado;
         $user->save();
         return $user;
     }
