@@ -15,7 +15,7 @@ class PermisoController extends Controller
      */
     public function index()
     {
-        return Permiso::where('estado',1)->get();
+        return Permiso::all();
 
     }
 
@@ -37,6 +37,7 @@ class PermisoController extends Controller
         }
         $permiso = new Permiso();
         $permiso->nombre = $request->nombre;
+        $permiso->descripcion = $request->descripcion;
         $permiso->save();
         return $permiso;
     }
@@ -55,6 +56,8 @@ class PermisoController extends Controller
     public function update(Request $request, Permiso $permiso)
     {
         $permiso->nombre = $request->nombre;
+        $permiso->descripcion = $request->descripcion;
+        $permiso->estado = $request->estado;
         $permiso->save();
         return $permiso;
     }
