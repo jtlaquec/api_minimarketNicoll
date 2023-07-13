@@ -13,7 +13,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        return Role::where('estado', 1)->get();
+        return Role::all();
     }
 
     /**
